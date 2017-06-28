@@ -1,0 +1,178 @@
+.contenedor
+  .menu-ex
+    width: 100%
+    position: fixed
+    background: $black
+    height: 100px
+    .img
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 5%
+      img
+        width: 250px
+    .ham
+      display: none
+    .links
+      position: absolute
+      right: 5%
+      top: 50%
+      transform: translateY(-50%)
+      padding: 0
+      margin: 0
+      nav
+        ul
+          padding: 0
+          margin: 0
+          list-style: none
+          li
+            font-size: 1.5em
+            padding-left: 80px
+            display: inline
+            a
+              color: $white
+              &:hover
+                color: $green
+                border-bottom: solid 1px $green
+                padding-bottom: 5px
+@media (max-width: 1330px)
+  .contenedor
+    .menu-ex
+      .img
+        img
+      .ham
+        display: none
+      .links
+        nav
+          ul
+            li
+              padding-left: 50px
+
+@media (max-width: 1160px)
+  .contenedor
+    .menu-ex
+      .img
+        img
+      .ham
+        display: none
+      .links
+        nav
+          ul
+            li
+              padding-left: 20px
+@media (max-width: 1160px)
+  .contenedor
+    .menu-ex
+      .img
+        img
+      .ham
+        display: none
+      .links
+        nav
+          ul
+            li
+              font-size: 1.3em
+              padding-left: 10px
+
+@media (max-width: 880px)
+  .contenedor
+    overflow: auto !important
+    .menu-ex
+      width: 100%
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      bottom: calc(100% - 100px)
+      background: $black !important
+      height: auto !important
+      padding-top: 50px
+      display: block
+      .img
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 5%
+        img
+          width: 250px
+      .ham
+        display: block
+        z-index: 2
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 5%
+        width: 35px
+        height: 50px
+        cursor: pointer
+        .line
+          border: solid 1px white
+          margin-top: 10px
+      .clicked
+        .line
+          &:nth-child(1)
+            position: relative
+            animation: line 1s ease forwards
+          &:nth-child(2)
+            animation: line2 1.5s ease forwards
+          &:nth-child(3)
+            position: relative
+            animation: line3 1s ease forwards
+      .links
+        background: $black
+        display: none
+        position: absolute
+        text-align: center
+        top: 100px
+        transform: translateY(0%)
+        padding: 0 !important
+        right: 0
+        nav
+          ul
+            padding: 0
+            margin: 0
+            list-style: none
+            li
+              margin-bottom: 20px
+              font-size: 1.5em
+              padding-left: 0px !important
+              display: block
+              margin-left: 0 !important
+              margin-right: 0 !important
+              width: 100vw !important
+              a
+                color: $white
+                &:hover
+                  color: $green
+                  border-bottom: solid 1px $green
+                  padding-bottom: 5px
+
+
+@keyframes line
+  0%
+    top: 0px
+    transform: rotate(0deg)
+    position: relative
+  100%
+    top: 11px
+    transform: rotate(45deg)
+    text-align: center
+    line-height: 10px
+    position: relative
+
+@keyframes line2
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+@keyframes line3
+  0%
+    top: 0px
+    transform: rotate(0deg)
+    position: relative
+  100%
+    bottom: 11px
+    transform: rotate(-45deg)
+    text-align: center
+    line-height: 10px
+    position: relative

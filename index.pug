@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title Búho
+    meta(charset="utf8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="shortcut icon" href="favicon.png")
+    link(rel="stylesheet" href="assets/css/main.css")
+    meta(property="og:type" content="website")
+    meta(property="og:title" content="Monumento")
+    meta(property="og:description" content="Monumento")
+    meta(property="og:image" content="assets/img/facebook.jpg")
+  body
+    section.home(style="background: url(assets/img/bg-home.jpg) no-repeat center center fixed;")
+      include _menu.pug
+      .containerr
+        .lead
+          .left
+            .overlayl
+            h2 Print
+            h3 Medios Impresos
+            h4 Desde impresión digital, hasta soluciones POP y POS, en Búho manejamos tus cuestiones de impresión y mercadotecnia desde su concepción.
+            a(href="") Conoce más
+          .center
+            .overlayc
+              h2 &
+          .right
+            .overlayr
+            h2 Digital
+            h3 Soluciones de Marketing
+            h4 Con desarrollo de Estrategia, Publicidad y Media y Desarrollo de Contenido, nuestra oferta digital está capacitada generar métodos de venta efectivos.
+            a(href="") Conoce más
+    section.somos
+      include _menu.pug
+      .container
+
+
+
+    script(src="assets/js/jquery-2.1.4.min.js" type="text/javascript")
+    script(src="assets/js/functions.js" type="text/javascript")

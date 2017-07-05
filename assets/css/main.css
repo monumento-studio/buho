@@ -46,6 +46,9 @@ summary {
   width: 90%;
   margin: 0 auto; }
 
+.container .lead h2 {
+  color: #000; }
+
 .btn a {
   background: #00ff00;
   color: black;
@@ -238,6 +241,53 @@ h2, h3, span, p {
     .btn a:hover {
       color: white;
       background: black; } }
+
+.lead h2 {
+  color: #000; }
+
+@media (max-width: 640px) {
+  section.somos .container .btn a, section.footer .container .tel-mail a, section.compromiso span, section.contacto .datos .redes a {
+    font-size: 2.125em !important; }
+  section.about .container .lead {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; }
+  section.about .container .imgn {
+    margin-bottom: 50px !important;
+    margin-top: 110px !important; }
+  section.about .container .imgn img {
+    -webkit-transform: translateY(-30%);
+    -moz-transform: translateY(-30%);
+    -o-transform: translateY(-30%);
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%); }
+  section.medios-lead .container .text, .container .lead h2, section.digital-lead .container .text {
+    padding-bottom: 50px !important; }
+  section.soluciones .container .text h3 {
+    margin: 0.25em 0 !important; }
+  section.soluciones .btn a {
+    padding: 15px 5px !important; }
+  section.herramientas, section.text2 {
+    padding-top: 50px;
+    padding-bottom: 50px !important; }
+  section.herramientas .top {
+    margin-top: 0 !important; }
+  section.herramientas .text h3 {
+    margin-bottom: 10px !important; }
+  section.gray h3 {
+    margin: 10px 0 !important; }
+  section.catalogo .lead {
+    padding-top: 100px !important; }
+  section.catalogo .container .lead h2 {
+    padding-bottom: 0 !important; }
+  section.contacto {
+    padding-top: 0 !important; }
+  section.contacto .container .lead h2 {
+    padding-bottom: 0 !important; }
+  section.contacto .datos span, .tel-mail p {
+    font-size: 2.125em !important;
+    color: #000 !important; }
+  .mail {
+    margin-bottom: 2.125em !important; } }
 
 /*-----------------------------------*  $TOAST-GRID
   An insane grid.
@@ -817,7 +867,7 @@ section.home {
           top: 40%;
           left: 25%;
           font-size: 3em;
-          color: #ffffff;
+          color: #ffffff !important;
           font-family: "Graphik-Semibold";
           font-weight: normal;
           opacity: 0;
@@ -1157,19 +1207,18 @@ section.home {
       display: none; }
     section.home .containerr .leadd {
       display: block; }
-      section.home .containerr .leadd .img {
-        font-size: 1.5em !important; }
-        section.home .containerr .leadd .img h1 {
-          color: #ffffff;
-          text-align: center;
-          margin-top: -50px;
-          padding: 10px;
-          font-family: "HaarlemmerMTStd-Regular";
-          font-weight: normal; }
-          section.home .containerr .leadd .img h1 span {
-            color: #00ff00;
-            font-family: "Graphik-Semibold";
-            font-weight: normal; } }
+      section.home .containerr .leadd .img h1 {
+        font-size: 20vw !important;
+        line-height: 1 !important;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        font-family: "HaarlemmerMTStd-Regular";
+        font-weight: normal; }
+        section.home .containerr .leadd .img h1 span {
+          color: #00ff00;
+          font-family: "Graphik-Semibold";
+          font-weight: normal; } }
 
 @media (max-width: 880px) {
   section.home .containerr {
@@ -1357,6 +1406,7 @@ section.home {
   .contenedor {
     overflow: auto !important; }
     .contenedor .menu-ex {
+      z-index: 15;
       width: 100%;
       position: fixed;
       top: 0;
@@ -1589,7 +1639,8 @@ section.somos {
       line-height: 1.3;
       font-family: "Graphik-Regular";
       font-weight: lighter;
-      font-size: 4em; }
+      font-size: 4em;
+      color: #000000; }
     section.somos .container .lead span {
       font-family: "HaarlemmerMTStd-Regular";
       color: #00ff00;
@@ -1678,7 +1729,15 @@ section.servicios-home {
 
 @media (max-width: 640px) {
   section.servicios-home .container .row .text h3 {
-    margin-bottom: 1em; } }
+    margin-bottom: 1em; }
+  .container .lead {
+    margin-left: 0;
+    padding-top: 10em; }
+    .container .lead h2 {
+      font-weight: lighter;
+      font-size: 4em;
+      color: #ffffff;
+      padding-bottom: 100px; } }
 
 section.footer {
   background: #ffffff;
@@ -1735,6 +1794,7 @@ section.about {
     padding-top: 150px;
     padding-bottom: 100px; }
     section.about .container .lead h2 {
+      color: #000000;
       line-height: 1.3;
       font-family: "Graphik-Regular";
       font-weight: lighter;
@@ -1812,6 +1872,7 @@ section.medios-lead {
     padding-top: 100px;
     padding-bottom: 200px; }
     section.medios-lead .container .lead h2 {
+      color: #000000;
       font-size: 4em; }
       section.medios-lead .container .lead h2 span {
         color: #00ff00;
@@ -1887,6 +1948,7 @@ section.digital-lead {
     padding-top: 100px;
     padding-bottom: 200px; }
     section.digital-lead .container .lead h2 {
+      color: #000000;
       font-size: 4em; }
       section.digital-lead .container .lead h2 span {
         color: #00ff00;
@@ -1940,8 +2002,8 @@ section.herramientas {
       font-family: "Graphik-Semibold"; }
 
 section.text2 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-top: -80px;
   background: #303030; }
   section.text2 p {
@@ -2017,9 +2079,7 @@ section.gray {
     background: #ffffff; }
     section.digital-lead .container .lead {
       padding-top: 50px;
-      padding-bottom: 100px; }
-  section.herramientas .lead h2 {
-    margin-left: -20px; } }
+      padding-bottom: 100px; } }
 
 section.proyectos {
   background-color: #ffffff;
@@ -2035,6 +2095,7 @@ section.proyectos-lead {
     padding-top: 100px;
     padding-bottom: 200px; }
     section.proyectos-lead .container .lead h2 {
+      color: #000000;
       font-size: 4em; }
       section.proyectos-lead .container .lead h2 span {
         color: #00ff00;
@@ -2072,7 +2133,7 @@ section.proyectos-lead {
 section.empresas {
   padding: 100px 0; }
   section.empresas .lead h3 {
-    margin-left: -20px !important;
+    margin-left: -20px;
     font-size: 1.6em;
     color: #ffffff; }
     section.empresas .lead h3 span {
@@ -2091,7 +2152,7 @@ section.empresas {
   section.empresas {
     padding: 100px 0; }
     section.empresas .lead h3 {
-      margin-left: -20px !important;
+      margin-left: 0;
       font-size: 1.6em;
       color: #ffffff; }
       section.empresas .lead h3 span {
@@ -2122,6 +2183,7 @@ section.catalogo {
   section.catalogo .lead {
     padding-top: 180px; }
     section.catalogo .lead h2 {
+      color: #000000;
       font-size: 4em;
       font-weight: lighter; }
       section.catalogo .lead h2 span {
@@ -2153,6 +2215,7 @@ section.contacto {
   background: #ffffff;
   padding-bottom: 100px; }
   section.contacto .lead h2 {
+    color: #000000;
     font-size: 4em; }
   section.contacto .mapa iframe {
     width: 100%;

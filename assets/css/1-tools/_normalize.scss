@@ -30,6 +30,9 @@ summary {
   width: 90%;
   margin: 0 auto;
 }
+.container .lead h2{
+	color: #000;
+}
 .btn a {
   background: #00ff00;
   color: black;
@@ -264,4 +267,78 @@ h2, h3, span, p {
       background: black;
       }
       }
+}
+.lead h2 {
+  color: #000;
+}
+
+@media (max-width: 640px) {
+  section.somos .container .btn a, section.footer .container .tel-mail a, section.compromiso span, section.contacto .datos .redes a {
+  font-size: 2.125em !important;
+  }
+  section.about .container .lead {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+  section.about .container .imgn {
+    margin-bottom: 50px !important;
+    margin-top: 110px !important;
+}
+section.about .container .imgn img {
+    	-webkit-transform: translateY(-30%);
+	-moz-transform: translateY(-30%);
+	-o-transform: translateY(-30%);
+	transform: translateY(-30%);
+}
+
+section.medios-lead .container .text, .container .lead h2, section.digital-lead .container .text {
+    padding-bottom: 50px !important;
+}
+
+section.soluciones .container .text h3 {
+    margin: 0.25em 0 !important;
+}
+
+section.soluciones .btn a{
+	padding: 15px 5px !important;
+}
+section.herramientas, section.text2 {
+    padding-top: 50px;
+    padding-bottom: 50px !important;
+}
+section.herramientas .top{
+    margin-top: 0 !important;
+}
+section.herramientas .text h3{
+	margin-bottom: 10px !important;
+}
+
+section.gray h3{
+	margin: 10px 0 !important;
+}
+
+section.catalogo .lead {
+    padding-top: 100px !important;
+}
+
+section.catalogo .container .lead h2{
+	padding-bottom: 0 !important;
+}
+
+section.contacto{
+	padding-top: 0 !important;
+}
+
+section.contacto .container .lead h2{
+	padding-bottom: 0 !important;
+}
+
+section.contacto .datos span, .tel-mail p {
+    font-size: 2.125em !important;
+    color: #000 !important;
+}
+
+.mail{
+    margin-bottom: 2.125em !important;
+}
 }

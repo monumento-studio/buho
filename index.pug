@@ -11,7 +11,7 @@ html
     meta(property="og:description" content="Monumento")
     meta(property="og:image" content="assets/img/facebook.jpg")
   body
-    section.home(style="background: url(assets/img/bg-home.jpg) no-repeat center center fixed;")
+    section.home#home(style="background-image: url(assets/img/bg-home.jpg);")
       include _menu.pug
       .containerr
         .lead
@@ -20,7 +20,7 @@ html
             h2 Print
             h3 Medios Impresos
             h4 Desde impresión digital, hasta soluciones POP y POS, en Búho manejamos tus cuestiones de impresión y mercadotecnia desde su concepción.
-            a(href="") Conoce más
+            a(href="medios-impresos.html") Conoce más
           .center
             .overlayc
               h2 &
@@ -29,10 +29,65 @@ html
             h2 Digital
             h3 Soluciones de Marketing
             h4 Con desarrollo de Estrategia, Publicidad y Media y Desarrollo de Contenido, nuestra oferta digital está capacitada generar métodos de venta efectivos.
-            a(href="") Conoce más
+            a(href="digital.html") Conoce más
+        .leadd
+          .img
+            h1 Print & <span>Digital</span>
     section.somos
       include _menu.pug
       .container
+        .row
+          .col.col--7-of-15.col--push-1-of-15.col--m-15-of-15
+            .lead
+              h2 Somos <span>Búho Media,</span> <br>expertos en estrategias <br>de comunicación e impresión
+        .row
+          .col.col--4-of-15.col--push-2-of-15
+            .img
+              img(src="assets/img/somos.jpg" alt="imagen")
+          .col.col--7-of-15.col--push-1-of-15
+            .text
+              h3 Diseñamos <span>soluciones de vanguardia en impresión y medios digitales </span>permitiendo a nuestros clientes centrarse en su negocio principal.
+            .btn
+              a(href="") Conoce más
+    section.servicios-home
+      .container
+        .lead.col--push-1-of-15
+          h2 Nuestros <span>Servicios</span>
+        .row
+          .col.col--5-of-15.col--push-1-of-15
+            .text
+              a(href="digital.html")
+                h4 01
+                h3 Soluciones <span>Digitales</span>
+          .col.col--5-of-15.col--push-1-of-15.col--d-first
+            .img
+              a(href="digital.html")
+                img(src="assets/img/serv.jpg" alt="Servicios")
+
+        .row
+          .col.col--5-of-15.col--push-1-of-15
+            .text
+              a(href="medios-impresos.html")
+                h4 02
+                h3 Medios <span>Impresos</span>
+          .col.col--5-of-15.col--push-3-of-15
+            .img
+              a(href="medios-impresos.html")
+                img(src="assets/img/impreso.jpg" alt="Servicios")
+
+        .row
+          .col.col--5-of-15.col--push-1-of-15
+            .text
+              a(href="proyectos-especiales.html")
+                h4 03
+                h3 Proyectos <span>Especiales</span>
+          .col.col--5-of-15.col--push-1-of-15.col--d-first
+            .img
+              a(href="proyectos-especiales.html")
+                img(src="assets/img/especial.jpg" alt="Servicios")
+
+    include _footer.pug
+
 
 
 

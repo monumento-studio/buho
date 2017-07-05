@@ -4,13 +4,14 @@
     position: fixed
     background: $black
     height: 100px
+    top: 0
     .img
       position: absolute
       top: 50%
       transform: translateY(-50%)
       left: 5%
       img
-        width: 250px
+        width: 15em
     .ham
       display: none
     .links
@@ -125,7 +126,79 @@
         text-align: center
         top: 100px
         transform: translateY(0%)
-        padding: 0 !important
+        padding: 5em 0 !important
+        right: 0
+        nav
+          ul
+            padding: 0
+            margin: 0
+            list-style: none
+            li
+              margin-bottom: 20px
+              font-size: 1.5em
+              padding-left: 0px !important
+              display: block
+              margin-left: 0 !important
+              margin-right: 0 !important
+              width: 100vw !important
+              a
+                color: $white
+                &:hover
+                  color: $green
+                  border-bottom: solid 1px $green
+                  padding-bottom: 5px
+@media (max-width: 800px)
+  .contenedor .menu-ex .img img
+   width: 20em
+  .contenedor .menu-ex .links nav ul li
+   margin-bottom: 2em
+   font-size: 3em
+
+
+@media (max-width: 640px)
+  .contenedor .menu-ex .links nav ul li a
+   color: #ffffff
+   font-size: 1.5em
+
+  .contenedor
+    overflow: auto !important
+    width: 100vw
+    .menu-ex
+      bottom: calc(100% - 75px) !important
+      .img
+        img
+          width: 150px
+      .ham
+        display: block
+        z-index: 2
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 5%
+        width: 30px
+        height: 50px
+        cursor: pointer
+        .line
+          border: solid 1px white
+          margin-top: 9px
+      .clicked
+        .line
+          &:nth-child(1)
+            position: relative
+            animation: line 1s ease forwards
+          &:nth-child(2)
+            animation: line2 1.5s ease forwards
+          &:nth-child(3)
+            position: relative
+            animation: line3 1s ease forwards
+      .links
+        background: $black
+        display: none
+        position: absolute
+        text-align: center
+        top: 70px
+        transform: translateY(0%)
+        padding: 5em 0 !important
         right: 0
         nav
           ul

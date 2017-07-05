@@ -26,9 +26,24 @@ summary {
   display: block;
 }
 .container {
-  width: 80%;
+  max-width: 1440px;
+  width: 90%;
   margin: 0 auto;
 }
+.btn a {
+  background: #00ff00;
+  color: black;
+  padding: 10px 15px;
+  font-size: 1.6em;
+  transition: all 400ms;
+  &:hover {
+    color: white;
+    background: black;
+    }
+    }
+
+
+
 audio,
 canvas,
 progress,
@@ -221,4 +236,32 @@ table {
 td,
 th {
   padding: 0;
+}
+
+h2, h3, span, p {
+  font-weight: normal;
+}
+
+@media (max-width: 640px) {
+  p {
+    font-size: 2.125em !important;
+  }
+
+  h1, h2, h3 {
+    font-size: 4em !important;
+  }
+
+}
+@media (max-width: 640px) {
+  .btn a {
+    background: #00ff00;
+    color: black;
+    padding: 15px 30px;
+    font-size: 2.125em;
+    transition: all 400ms;
+    &:hover {
+      color: white;
+      background: black;
+      }
+      }
 }
